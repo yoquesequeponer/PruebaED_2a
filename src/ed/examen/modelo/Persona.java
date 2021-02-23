@@ -25,15 +25,18 @@ public class Persona{
 	/**
 	 * Metodo que devuelve un DNI del tipo String 
 	 * @return String Dni
-	 */
+	 **/
 	public String getDni() {
 		return dni;
 	}
 	
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+
+	/**
+	 * Metodo que cambia un dni
+	 * @param dni es el nuevo dni
+	 * @throws Exception Cuando el ultimo caracter no es una letra
+	 **/
 	public void setDni(String dni) throws Exception {
 		//comprobacion de si el ultimo caracter es una letra
 		if(Character.isLetter(dni.charAt(dni.length()-1))) {
