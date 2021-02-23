@@ -8,9 +8,13 @@ public class Persona{
 	
 	public Persona() {}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * Metodo para crear una persona
+	 * @param dni es el identificador de la persona
+	 * @param nombre es el nombre de la persona
+	 * @param apellido1 es el primer apellido de la persona
+	 **/
 	public Persona(String dni, String nombre, String apellido1) {
 		this.dni = dni;
 		this.nombre = nombre;
