@@ -8,6 +8,7 @@ import ed.examen.modelo.Persona;
 
 class PersonaTest {
 	Persona p = new Persona("12345678A", "Alvaro", "Fernandez");
+
 	@Test
 	void testPersonaStringStringString() {
 		assertNotNull(p);
@@ -23,7 +24,22 @@ class PersonaTest {
 
 	@Test
 	void testSetDni() {
-		fail("Not yet implemented");
+		// Bien hecho
+		try {
+			p.setDni("00000000A");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		assertEquals("00000000A", p.getDni());
+
+		// Mal hecho
+		boolean exceptionLanzada = false;
+		try {
+			p.setDni("000000000");
+		} catch (Exception e) {
+			exceptionLanzada = true;
+		}
+		assertTrue(exceptionLanzada);// assertEquals(true,exceptionLanzada);
 	}
 
 	@Test
