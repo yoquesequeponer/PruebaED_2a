@@ -57,7 +57,7 @@ class CursoTest {
 
 	@Test
 	void testAniadirAlumno() {
-		fail("Not yet implemented");
+		c.aniadirAlumno(new Persona());
 	}
 
 	@Test
