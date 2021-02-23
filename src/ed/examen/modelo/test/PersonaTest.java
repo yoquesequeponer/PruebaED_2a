@@ -4,11 +4,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class PersonaTest {
+import ed.examen.modelo.Persona;
 
+class PersonaTest {
+	Persona p = new Persona("12345678A", "Alvaro", "Fernandez");
 	@Test
 	void testPersonaStringStringString() {
-		fail("Not yet implemented");
+		assertNotNull(p);
+		assertEquals("12345678A", p.getDni());
+		assertEquals("Alvaro", p.getNombre());
+		assertEquals("Fernandez", p.getApellido1());
 	}
 
 	@Test
