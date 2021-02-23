@@ -57,12 +57,17 @@ class CursoTest {
 
 	@Test
 	void testAniadirAlumno() {
+		int alumAntes=c.numeroAlumnos();
 		c.aniadirAlumno(new Persona());
+		int alumDesp=c.numeroAlumnos();
+		assertEquals(alumAntes+1, alumDesp);
 	}
 
 	@Test
 	void testEstaRegistrado() {
-		fail("Not yet implemented");
+		assertFalse(c.estaRegistrado("000000000"));		
+		c.aniadirAlumno(new Persona("12345678A", "", ""));
+		assertTrue(c.estaRegistrado("12345678A"));
 	}
 
 	@Test
