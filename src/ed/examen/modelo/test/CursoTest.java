@@ -67,7 +67,7 @@ class CursoTest {
 
 	@Test
 	void testNumeroAlumnos() {
-		fail("Not yet implemented");
+		assertEquals(c.numeroAlumnos(), 0);
 	}
 	@Test
 	void testCurso() {
