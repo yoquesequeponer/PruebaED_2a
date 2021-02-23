@@ -21,9 +21,11 @@ public class Persona{
 		this.apellido1 = apellido1;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+
+	/**
+	 * Metodo que devuelve un DNI del tipo String 
+	 * @return String Dni
+	 */
 	public String getDni() {
 		return dni;
 	}
